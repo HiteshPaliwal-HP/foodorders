@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple navbar</title>
+    <style>
+        *{padding: 0px;
+        margin: 0px;}
+
+        #navbar{
+            display: flex;
+            align-items: center;
+            top: 0px;
+        }
+        #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+        .logo{
+            top:0px;
+            left:0px;
+        }
+        .logo img{
+            height: 100px;
+            width: 250px;
+        }
+        #navbar ul{
+            display: flex;
+        }
+        #navbar ul li{
+            list-style: none;
+            padding: 45px 25px;
+            font-size: 1.6rem;
+              }
+
+    </style>
+
+
+</head>
+<body>
+    
+
+        <nav id="navbar">
+            <div class="logo">
+                <img src="hp.png" alt="">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>services</li>
+                <li>contact</li>    
+            </ul>
+        </nav>
+
+    </body>
+</html>
